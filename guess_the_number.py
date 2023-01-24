@@ -9,7 +9,7 @@ pc_number = random.randint(1, 100)
 counter_number_of_tries = 0
 
 while True:
-    player_number = input(Fore.MAGENTA + "Choose number between 1-100 : ")
+    player_number = input(Fore.MAGENTA + "Choose a number between 1-100 : ")
 
     if player_number == "end" or player_number == "END":
         print(Fore.LIGHTGREEN_EX + "G o o d b y e ! Thanks for playing my game :)")
@@ -32,11 +32,11 @@ while True:
         break
 
     elif player_number > pc_number:
-        print(Fore.LIGHTGREEN_EX + "Choose lower number .")
+        print(Fore.LIGHTGREEN_EX + "Choose a lower number .")
         counter_number_of_tries += 1
-        print(f"Number of attempts :{counter_number_of_tries} ")
+        print(f">>> Number of attempts :{counter_number_of_tries} <<< ")
 
     elif player_number < pc_number:
-        print(Fore.LIGHTGREEN_EX + "Choose higher number .")
+        print(Fore.LIGHTGREEN_EX + "Choose a higher number .")
         counter_number_of_tries += 1
-        print(f"Number of attempts : {counter_number_of_tries} ")
+        print(f">>> Number of attempts : {counter_number_of_tries} <<< ")
