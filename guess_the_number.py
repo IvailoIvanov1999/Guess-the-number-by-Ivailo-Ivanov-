@@ -16,14 +16,14 @@ while True:
         break
 
     if not player_number.isdigit():
-        print(Fore.RED + "Invalid input...Enter number please !")
+        print(Fore.RED + "Invalid input...Enter positive integer number please !")
         continue
 
     player_number = int(player_number)
 
-    if player_number > 100 or player_number < 1:
+    if player_number > 100 or player_number < 1 :
         print(Fore.RED + "Invalid input... Try again !")
-        print(Fore.CYAN + "Please choose number between 1-100.")
+        print(Fore.CYAN + "Please choose integer number between 1-100.")
         continue
 
     if player_number == pc_number:
