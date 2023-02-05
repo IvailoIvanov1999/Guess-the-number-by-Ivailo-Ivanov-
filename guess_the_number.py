@@ -21,7 +21,7 @@ while True:
 
     player_number = int(player_number)
 
-    if player_number > 100 or player_number < 1 :
+    if player_number > 100 or player_number < 1:
         print(Fore.RED + "Invalid input... Try again !")
         print(Fore.CYAN + "Please choose integer number between 1-100.")
         continue
@@ -40,3 +40,5 @@ while True:
         print(Fore.LIGHTGREEN_EX + "Choose a higher number .")
         counter_number_of_tries += 1
         print(f">>> Number of attempts : {counter_number_of_tries} <<< ")
+
+    print(Fore.LIGHTBLUE_EX + "If you want to EXIT ,type 'end'!")
